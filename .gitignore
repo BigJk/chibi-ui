@@ -1,0 +1,4 @@
+.idea/
+*.exe
+cmake-*-*/
+entrypoint.js
