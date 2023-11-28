@@ -28,7 +28,21 @@ In the third phase of the project, the goal is to optimize the rendering of the 
 
 # Examples
 
-See ``examples/`` for examples.
+The following example creates a simple window with a button that prints a message to console when pressed. The ``globalThis.tick`` function is called every frame.
+
+```javascript
+globalThis.tick = () => {
+    imgui.begin("Hello World", 0);
+    {
+        if (imgui.button('Test Button')) { print("button pressed!") }
+    }
+    imgui.end();
+    
+    imgui.showMetricsWindow();
+}
+```
+
+See ``examples/`` for more examples
 
 # CLI
 
