@@ -8,7 +8,26 @@
     <img src="./github/screenshot.png" />
 </p>
 
-``chibi-ui`` is a highly experimental UI *"framework"* to create native desktop applications using web technologies, while avoiding shipping a browser with the application or using any kind of webview. It uses [quickjs](https://github.com/quickjs-ng/quickjs) as the JavaScript engine and makes [ImGui](https://github.com/ocornut/imgui) available to the JavaScript code.
+``chibi-ui`` is a highly experimental and opinionated UI *"framework"* to create native desktop applications using web technologies, while avoiding shipping a browser with the application or using any kind of webview. It uses [quickjs](https://github.com/quickjs-ng/quickjs) as the JavaScript engine and makes [ImGui](https://github.com/ocornut/imgui) available to the JavaScript code.
+
+# Motivation
+
+Dealing with frontend since the time when JQuery was the way to go I grew very fond of the ui ecosystem of the web. I like the style and layout abilities we have in modern browsers, but I dislike the fact that we need to ship the browser with the application (e.g. electron) or rely on a webview being available on the target platform (e.g. tauri) if we want to use web technologies to create desktop applications. Even without shipping the browser the memory usage of these applications is still very high even for basic applications.
+
+This project is a highly opinionated experiment to see which concepts of the web can be distilled into a performant native ui framework and if this can be done without sacrificing the things I like about the web.
+
+### What I want to keep
+
+- A small set of great layout concepts (e.g. Flexbox, Grid)
+- Familiar styling (e.g. CSS-like)
+- JavaScript as the main language, because of the big ecosystem of libraries and frameworks
+- Easy cross-platform support
+
+### What I want to avoid
+
+- Shipping a browser with the application or using a webview
+- High memory usage
+- Different ways to do the same thing (e.g. [some historical layouting methods of the web](https://i.imgur.com/1ERqMX7.png))
 
 # Roadmap
 
